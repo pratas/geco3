@@ -1,7 +1,7 @@
 <p align="center"><img src="imgs/logo.png" 
-alt="GeCo2" width="300" height="260" border="0" /></p>
-<b>Compress and analyze genomic sequences</b>. As a compression tool, GeCo2 is able to provide additional compression gains over several top specific tools, while as an analysis tool, GeCo2 is able to determine absolute measures, namely for many distance computations, and local measures, such as the information content contained in each element, providing a way to quantify and locate specific genomic events. 
-GeCo2 can afford:
+alt="GeCo3" width="300" height="260" border="0" /></p>
+<b>Compress and analyze genomic sequences</b>. As a compression tool, GeCo3 is able to provide additional compression gains over several top specific tools, while as an analysis tool, GeCo3 is able to determine absolute measures, namely for many distance computations, and local measures, such as the information content contained in each element, providing a way to quantify and locate specific genomic events. 
+GeCo3 can afford:
 <ul>
 <li>reference-free compression</li>
 <li>referential compression</li>
@@ -13,7 +13,7 @@ GeCo2 can afford:
 
 ## INSTALLATION ##
 
-Cmake is needed for installation (http://www.cmake.org/). You can download it directly from http://www.cmake.org/cmake/resources/software.html or use an appropriate packet manager. In the following instructions we show the procedure to install, compile and run GeCo2:
+Cmake is needed for installation (http://www.cmake.org/). You can download it directly from http://www.cmake.org/cmake/resources/software.html or use an appropriate packet manager. In the following instructions we show the procedure to install, compile and run GeCo3:
 
 ### STEP 1
 
@@ -22,8 +22,8 @@ Download, install and resolve conflicts.
 #### Linux 
 <pre>
 #sudo apt-get install cmake git
-git clone https://github.com/pratas/geco2.git
-cd geco2/src/
+git clone https://github.com/pratas/geco3.git
+cd geco3/src/
 cmake .
 make
 </pre>
@@ -31,9 +31,9 @@ make
 Alternatively, you can install (without cmake and only for linux) using
 
 <pre>
-wget https://github.com/pratas/geco2/archive/master.zip
+wget https://github.com/pratas/GeCo3/archive/master.zip
 unzip master.zip
-cd geco2-master/src/
+cd GeCo3-master/src/
 mv Makefile.linux Makefile
 make
 </pre>
@@ -48,9 +48,9 @@ only if you do not have it. After type:
 brew install cmake
 brew install wget
 brew install gcc48
-wget https://github.com/pratas/geco2/archive/master.zip
+wget https://github.com/pratas/GeCo3/archive/master.zip
 unzip master.zip
-cd geco2-master/src/
+cd GeCo3-master/src/
 cmake .
 make
 </pre>
@@ -73,28 +73,28 @@ In windows use cygwin (https://www.cygwin.com/) and make sure that it is include
 
 ## EXECUTION
 
-### Run GeCo2
+### Run GeCo3
 
-Run GeCo2 using (lazy) level 5:
+Run GeCo3 using (lazy) level 5:
 
 <pre>
-./GeCo2 -v -l 5 File.seq
+./GeCo3 -v -l 5 File.seq
 </pre>
 
 ## PARAMETERS
 
 To see the possible options type
 <pre>
-./GeCo2
+./GeCo3
 </pre>
 or
 <pre>
-./GeCo2 -h
+./GeCo3 -h
 </pre>
 
 If you are not interested in setting the template for each model, then use the levels mode. To see the possible levels type:
 <pre>
-./GeCo2 -s
+./GeCo3 -s
 </pre>
 
 ## CITATION ##
@@ -103,19 +103,13 @@ On using this software/method please cite:
 
 D. Pratas, A. J. Pinho, P. J. S. G. Ferreira. Efficient compression of genomic sequences. Proc. of the Data Compression Conference, DCC-2016, Snowbird, UT, p. 231-240, March 2016.
 
-## NEW FEATURES IN VERSION 2 ##
+## NEW FEATURES IN VERSION 3 ##
 
-1. Specific Gamma for each model;
-2. Specific Cache-hash sizes;
-3. Mode to allow to run with inverted repeats only;
-4. New interface layout (ascii);
-5. New approximate power function;
-6. Optimized functions;
-7. New 15 pre-computed modes for reference-free compression;
+1. ...
 
 ## ISSUES ##
 
-For any issue let us know at [issues link](https://github.com/pratas/GeCo2/issues).
+For any issue let us know at [issues link](https://github.com/pratas/GeCo3/issues).
 
 ## LICENSE ##
 
